@@ -37,6 +37,13 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+			 <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-release-plugin</artifactId>
+             <configuration>
+             <goals>install</goals>
+             </configuration>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -45,4 +52,8 @@
     <module>pet-clinic-data</module>
     <module>pet-clinic-web</module>
   </modules>
+  <scm>
+		<developerConnection>scm:git:git@github.com:pushyamitrakumar/spring-pet-clinic.git</developerConnection>
+		<tag>RELEASE1.0</tag>
+	</scm> 
 </project>
